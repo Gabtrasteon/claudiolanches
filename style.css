@@ -1,0 +1,117 @@
+body {
+    height: 125vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #ffa618;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container {
+    display: none;
+}
+
+.container.active {
+    display: block;
+}
+
+.item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item label {
+    margin-right: 10px;
+    flex-grow: 1; /* Faz o label ocupar o espaço restante */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#valorTotal {
+    background-color: #ffa618;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed; /* Preço fixo na tela */
+    bottom: 0; /* Sempre no rodapé */
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    z-index: 1000; /* Garante que o total fique sobre outros elementos */
+}
+#botaoLimpar{
+    background-color: #ffffff;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    body{
+        height: 150vh;
+    }
+    nav a {
+        margin: 0 10px;
+    }
+    nav{
+        font-size: 10px;
+    }
+    .quantity-controls button {
+        padding: 15px; /* Botões maiores em dispositivos móveis */
+        width: 100%; /* Botões ocupam 100% da largura disponível */
+    }
+
+    #resultado {
+        width: calc(100% - 40px); /* Ocupa 100% da largura com margem */
+        left: 20px; /* Ajusta a posição para a esquerda */
+    }
+}
+
+footer {
+    margin-top: 50px;
+}

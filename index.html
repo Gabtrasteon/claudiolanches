@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Lanches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cardápio de Lanches</h1>
+</header>
+
+<nav>
+    <a href="#" data-target="caixa">Caixa</a>
+    <a href="#" data-target="bebidasAlcoolicas">Bebidas Alcoólicas</a>
+    <a href="#" data-target="naturais">Naturais</a>
+    <a href="#" data-target="refrigerantes">Refrigerantes</a>
+    <a href="#" data-target="cachorro">Lanches - Cachorro</a>
+    <a href="#" data-target="xLanches">Lanches - X</a>
+    <a href="#" data-target="adicionais">Adicionais</a>
+</nav>
+
+<!-- Seções de produtos -->
+<div id="caixa" class="container active">
+    <h2>Caixa</h2>
+    <div class="item">
+        <label>Babalu - R$0,50</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="0.5">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Morangueti - R$1,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="1.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Bombom - R$1,50</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="1.50">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Bombom Lacta - R$2,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="2.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Pacoquinha - R$1,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="1.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Paçoca Grande - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Trento - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Trident - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Halls - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Fini - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Dipiloko Bum - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Olho - R$7,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="7.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Voa - R$7,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="7.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Salgadinho - R$7,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="7.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bebidas Alcoólicas -->
+<div id="bebidasAlcoolicas" class="container">
+    <h2>Bebidas Alcoólicas</h2>
+    <div class="item">
+        <label>Glacial - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Brhama - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Skol - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Antartica Boa - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Amstel - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Brahma Zero - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Original - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Longneck - R$10,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="10.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Naturais -->
+<div id="naturais" class="container">
+    <h2>Naturais</h2>
+    <div class="item">
+        <label>Natu 330 ml - R$9,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="9.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Natu 510 ml - R$11,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="11.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Natu 1L - R$16,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="16.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Refrigerantes -->
+<div id="refrigerantes" class="container">
+    <h2>Refrigerantes</h2>
+    <div class="item">
+        <label>Sodinha - R$2,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="2.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Mini Fanta - R$3,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="3.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Mini Coca - R$3,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="3.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Kapo - R$3,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="3.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Coca Café - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Coca KS - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Água (com ou sem gás) - R$4,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="4.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Lata Refri - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Refri 600ml - R$7,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="7.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Tubaina - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Vale Garrafinha - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Vale Lata - R$7,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="7.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>1L Refri - R$9,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="9.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Monster - R$11,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="11.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>2L Refri - R$16,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="16.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Tubaina 2L - R$10,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="10.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Gatorade - R$5,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="5.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Lanches Cachorro -->
+<div id="cachorro" class="container">
+    <h2>Lanches Cachorro</h2>
+    <div class="item">
+        <label>Simples - R$12,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="12.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Simples - R$18,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="18.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Simples Duplo - R$14,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="14.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Simples Duplo PM - R$20,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="20.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Frango - R$25,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="25.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Bacon - R$29,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="29.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Misto - R$30,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="30.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Calabresa - R$25,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="25.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Especial - R$35,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="35.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>BF - R$33,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="33.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>BC - R$33,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="33.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Lanches X -->
+<div id="xLanches" class="container">
+    <h2>Lanches X</h2>
+    <div class="item">
+        <label>X Tudo - R$55,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="55.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Begg - R$36,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="36.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Burguer - R$14,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="14.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Salada - R$18,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="18.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Frango - R$32,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="32.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X BF - R$40,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="40.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X BC - R$40,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="40.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Bacon - R$35,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="35.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Galinha - R$33,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="33.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Calabresa - R$35,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="35.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>X Vegetariano - R$17,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="17.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Campo Adicionais -->
+<div id="adicionais" class="container">
+    <h2>Adicionais</h2>
+    <div class="item">
+        <label>Salada - R$1,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="1.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Vina - R$2,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="2.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Hambúrguer - R$3,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="3.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Presunto e Mussarela - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Mussarela - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Bacon - R$8,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="8.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Frango - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Calabresa - R$6,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="6.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+    <div class="item">
+        <label>Ovo - R$3,00</label>
+        <div class="quantity-controls">
+            <button class="decrement">−</button>
+            <input type="number" value="0" min="0" data-preco="3.00">
+            <button class="increment">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Total -->
+
+<div class="total" id="valorTotal">
+    <h2>Total: R$<span id="total">0.00</span></h2>
+    <button id="botaoLimpar">Limpar</button>
+</div>
+
+
+
+<script>
+     // Função para trocar as seções ao clicar nos links de navegação
+     document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.dataset.target;
+            document.querySelectorAll('.container').forEach(container => container.classList.remove('active'));
+            document.getElementById(target).classList.add('active');
+        });
+    });
+
+    // Selecionar elementos do DOM
+    const decrementButtons = document.querySelectorAll('.decrement');
+    const incrementButtons = document.querySelectorAll('.increment');
+    const resultDiv = document.getElementById('resultado');
+    const totalSpan = document.getElementById('total');
+    const botaoLimpar = document.getElementById('botaoLimpar');
+    
+    // Adicionar evento aos botões de incremento
+    incrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const input = button.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+            calcularTotal();
+        });
+    });
+    
+    // Adicionar evento aos botões de decremento
+    decrementButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const input = button.nextElementSibling;
+            if (input.value > 0) {
+                input.value = parseInt(input.value) - 1;
+                calcularTotal();
+            }
+        });
+    });
+    
+    // Função para calcular o total
+    function calcularTotal() {
+        let total = 0;
+    
+        // Iterar sobre todos os campos de quantidade
+        document.querySelectorAll('.quantity-controls input').forEach(input => {
+            const quantity = parseInt(input.value);
+            const price = parseFloat(input.dataset.preco);
+            total += quantity * price;
+        });
+    
+        // Mostrar o resultado
+        totalSpan.textContent = total.toFixed(2);
+    }
+    
+    // Adicionar evento ao botão de limpar
+    botaoLimpar.addEventListener('click', () => {
+        document.querySelectorAll('.quantity-controls input').forEach(input => {
+            input.value = 0;  // Redefine cada input para 0
+        });
+        calcularTotal();  // Recalcula o total
+    });
+    </script>
+
+</body>
+</html>
