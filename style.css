@@ -19,6 +19,7 @@ nav {
     background-color: #f4f4f4;
     padding: 10px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 nav a {
